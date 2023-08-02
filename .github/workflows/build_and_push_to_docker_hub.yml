@@ -23,4 +23,4 @@ jobs:
         run: docker build -t usamashafique/vaccine:latest .
       
       - name: Push Docker Image
-        run: docker push usamashafique/vaccine:tagname
+        run: docker push usamashafique/vaccine:latest
