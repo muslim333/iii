@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       
       - name: Build Docker Image
-        run: docker build -t usamashafique/school_health_app_image:latest .
+        run: docker build -t usamashafique/Angular:latest .
       
       - name: Push Docker Image
-        run: docker push usamashafique/school_health_app_image:latest
+        run: docker push usamashafique/Angular:latest
