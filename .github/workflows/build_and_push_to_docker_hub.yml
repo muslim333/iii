@@ -3,7 +3,7 @@ name: Build Ionic App and Deploy on FTP
 on:
   push:
     branches:
-      - main # Adjust this to your branch name if needed
+      - main 
 
 jobs:
   build:
@@ -20,7 +20,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
       
       - name: Build Docker Image
-        run: docker build -t usamashafique/Angular:latest .
+        run: docker build -t usamashafique/angular:latest .
       
       - name: Push Docker Image
-        run: docker push usamashafique/Angular:latest
+        run: docker push usamashafique/angular:latest
